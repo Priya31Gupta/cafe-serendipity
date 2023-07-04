@@ -1,0 +1,96 @@
+.navbar{
+    background-color: #222222;
+    min-height: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    .cafe-name{
+        font-family: cursive;
+    }
+    .justify-end{
+        justify-content: end;
+    }
+    .list{
+        display: flex;
+        word-break: break-word;
+        line-height: normal;
+        align-items: center;
+        a{
+            text-decoration: none;
+        }
+        .list-item{
+            min-width: 6rem;
+            font-family: fantasy;
+            position: relative;
+            display: block;
+            cursor: pointer;
+        }
+        .reserve-btn{
+            background: transparent;
+            color: #fff;
+            border: 1px solid;
+            min-height: 45px;
+            min-width: 10rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+    .menu{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .navbar{
+        justify-content: space-between;
+        .list{
+            display: none;
+        }
+        .menu{
+            display: block;
+        }
+    }
+    .mobile-list{
+        display: block;
+        background-color: #222222;
+        color: #ffffff;
+        padding: 0 20px;
+        .list-item{
+            display: block;
+            line-height: normal;font-family: fantasy;
+            position: relative;
+            display: block;
+            cursor: pointer;
+        }
+    }
+}
+.fade-up{
+    animation: fadeup 5s;
+}
+.fade-in{
+    animation: fadedown 5s;
+}
+@keyframes fadeup {
+    from {
+        transform: translate3d(0,-10px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+@keyframes fadedown {
+    from {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+
+    to {
+        transform: translate3d(0,-10px,0)
+    }
+}

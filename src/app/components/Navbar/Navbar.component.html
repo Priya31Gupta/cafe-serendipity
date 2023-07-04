@@ -1,0 +1,15 @@
+<nav class="navbar">
+    <h2 class="cafe-name">Café Serendipity</h2>
+    <div class="justify-end list">
+        <a class="list-item">About us</a>
+        <a class="list-item">Menu</a>
+        <a class="list-item">Contact</a>
+        <button class="reserve-btn">RESERVATION</button>
+    </div>
+    <span class="material-symbols-outlined menu" (click)="toggleMenu()">menu</span>
+</nav>
+<div class="mobile-list" [ngClass]="menuOption ? 'fadeup' : 'fadedown'" *ngIf="menuOption">
+    <a class="list-item">About us</a>
+    <a class="list-item">Menu</a>
+    <a class="list-item">Contact</a>
+</div>
