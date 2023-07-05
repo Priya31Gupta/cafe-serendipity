@@ -1,0 +1,73 @@
+footer{
+    background-color: #222222;
+    position: relative;
+    bottom: 0%;
+    padding: 4em;
+    margin: auto;
+    
+    .container{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        color: #ffffff;
+        padding: 2.5rem 3.75rem;
+        .col{
+            h3{
+                font-weight: 300;
+            }
+            .cafe-name{
+                font-family: cursive;
+                font-weight: 400;
+                cursor: pointer;
+            }
+            .btn-cont{
+                display: flex;
+                .reserve-btn{
+                    background: transparent;
+                    color: #fff;
+                    border: 1px solid;
+                    min-height: 45px;
+                    min-width: 10rem;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+        .footer-icon{
+            fill: #5E45CE;
+            cursor: pointer;
+        }
+        .address{
+            font-size: 1em;
+            font-weight: 200;
+            font-family: sans-serif;
+        }
+        .opening-hours{
+            font-family: sans-serif;
+            font-weight: 200;
+        }
+        .flex{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            font-family: sans-serif;
+        }
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: auto;
+            padding: 1.5rem 0.75rem;
+            .col{
+                min-width: 80%;
+                text-align: start;
+                .reserve-btn{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        padding: 1em;
+        width: -webkit-fill-available;
+    }
+}

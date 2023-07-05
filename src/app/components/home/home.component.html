@@ -1,0 +1,102 @@
+<div class="banner">
+    <h1 class="title-space">Savor the moment at Café Serendipity</h1>
+    <div class="sub-title">
+        <p>Indulge in the cozy, relaxing ambiance of Café Serendipity and enjoy our delectable menu of continental snacks and beverages.</p>
+    </div>
+</div>
+<div class="benefit">
+    
+    <div class="card">
+        <p class="benefit-title">Experience the perfect blend of comfort, relaxation, and indulgence at Café Serendipity.</p>
+        <img src="../../../assets/good-vibes.webp" alt="good-vibes" /><br/>
+        <div>
+            <h2>Cozy Place</h2>
+            <p>At Café Serendipity, we strive to create a warm and welcoming ambiance for our guests. Our cozy interior is designed to make you feel at home, whether you’re catching up with friends, enjoying a solo moment, or snuggling up with your significant other. The comfortable seating, soft lighting, and relaxing decor make our cafe the perfect place to unwind and escape from the world for a little while.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../../../assets/cozy-place.webp" alt="good-vibes" /><br/>
+        <div>
+            <h2>Relax Atmosphere</h2>
+            <p>At Café Serendipity, we understand that sometimes you just need to relax and take a break from the hustle and bustle of everyday life. That’s why we’ve created a peaceful and inviting atmosphere that soothes the senses and calms the mind. From the gentle music playing in the background to the soft lighting and comfortable seating, every detail is designed to help you unwind and de-stress.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../../../assets/relax-atmosphere.webp" alt="good-vibes" /><br/>
+        <div>
+            <h2>Nice and quick service</h2>
+            <p>At Café Serendipity, we believe that great service is an essential part of the cafe experience. That’s why our staff is dedicated to providing prompt and friendly service that enhances your visit. From taking your order to preparing your snacks and beverages, our team works efficiently and courteously to ensure that you have a seamless and enjoyable experience. Whether you’re in a rush or have time to spare, our nice and quick service will leave you feeling satisfied and content.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="menu-cont">
+        <h1>OUR MENU</h1>
+        <div class="menu-title">
+            <div class="divide-seperator"></div>
+            <h2>Get Relax. Eat.</h2>
+            <div class="divide-seperator"></div>
+        </div>
+        <div class="menu-box">
+            <div class="box" *ngFor="let item of menuItems">
+                <h3 class="ff-IBM400">{{item.title}}</h3>
+                <p class="ff-IBM100">{{item.desc}}</p>
+                <p class="ff-IBM100">Price : {{item.price}}</p>
+            </div>
+        </div>
+        <div class="btn-cont">
+            <button class="reserve-btn">VIEW ALL MENU</button>
+        </div>
+    </div>
+</div>
+<div class="signature-cont">
+    <div class="cont">
+        <div>
+            <h2 class="ff-IBM400">Taste the Good Life at Café Serendipity</h2>
+            <p>At Café Serendipity, we take pride in offering a wide selection of continental snacks that perfectly complement your coffee or tea. Our menu features a variety of sweet and savory items, including freshly baked croissants, mouthwatering sandwiches, and decadent desserts. Whether you’re craving a light snack or a hearty meal, we’ve got you covered. Plus, with our cozy atmosphere and friendly staff, you can sit back, relax, and enjoy your favorite treats.</p>
+        </div>
+        <div class="btn-cont">
+            <button class="reserve-btn">VIEW ALL MENU</button>
+        </div>
+    </div>
+</div>
+<div class="img-cont">
+    <img src="../../../assets/fine-dining-food-1.webp" alt="fine-dining-food-1" />
+    <img src="../../../assets/having-lunch-together.webp" alt="fine-dining-food-1" />
+    <img src="../../../assets/people-having-drink-at-daytime-1.webp" alt="fine-dining-food-1" />
+</div>
+<div class="benefit team">
+    <div class="card">
+        <h1 class="benefit-title">Meet our team</h1>
+        <p>Welcome to Café Serendipity, where we believe that a good cup of coffee and a delicious snack can brighten up anyone’s day. Our cozy cafe provides a warm and inviting atmosphere where you can catch up with friends, enjoy a relaxing moment with family, or simply indulge in some ‘me-time’. With our wide selection of treats and quick service, we are committed to providing a memorable experience for everyone. So come on over and enjoy the good life at Café Serendipity!</p>
+        <img src="../../../assets/chef-1.webp" class="chef" alt="good-vibes" /><br/>
+    </div>
+    <div class="card">
+        <img src="../../../assets/chef-2-1.webp" class="chef" alt="good-vibes" /><br/>
+    </div>
+    <div class="card">
+        <img src="../../../assets/chef-3.webp" class="chef" alt="good-vibes" /><br/>
+    </div>
+</div>
+<div class="review-cont">
+    <h2 class="review-title">What They Say</h2>
+    <div class="cont">
+        <div class="review-card" *ngFor="let review of reviewItem">
+            <div class="img-cont">
+                <img [src]='review.img' [alt]="review.img" />
+            </div>
+            <p class="review">{{review.review}}</p>
+        </div>
+    </div>
+</div>
+<div class="reservation-cont">
+    <div class="cont">
+        <h2 class="title">Reservation</h2>
+        <p class="desc">Come on over to Café Serendipity and enjoy a relaxing moment with your friends and family. No reservations required – just drop in and indulge in some delicious snacks and coffee. We look forward to welcoming you!</p>
+        <div class="btn-cont">
+            <button class="reserve-btn">Book A table Now</button>
+        </div>
+        <div class="tele-title">TELEPHONE RESERVATIONS</div>
+        <div class="tele-title">12 34 56 7890</div>
+    </div>
+</div>

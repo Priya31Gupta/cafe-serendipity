@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from './components/Navbar/Navbar.component';
+import { FooterComponent } from './components/Footer/footer.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

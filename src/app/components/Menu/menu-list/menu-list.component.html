@@ -1,0 +1,34 @@
+<div class="banner">
+    <h1 class="title-space">Our Menu</h1>
+    <div class="sub-title">
+        <p>Massa praesent sit suspendisse ac volutpat amet. Commodo elit at non neque ullamcorper id.</p>
+    </div>
+</div>
+
+<ng-container *ngFor="let list of [{title: 'Appetizer',list:apetizerList},{title: 'Main Courses',list:mainCourseList},{title:'Dessert',list:dessertList}]">
+    <div class="banner section-header">
+        <h1 class="title-space">{{list.title}}</h1>
+    </div>
+    <div class="container">
+        <div class="menu-cont">
+            <div class="menu-box">
+                <div class="box" *ngFor="let item of list.list">
+                    <p>{{item.title}}</p>
+                    <p class="ff-IBM100">{{item.desc}}</p>
+                    <p class="ff-IBM100">Price : {{item.price}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<div class="reservation-cont">
+    <div class="cont">
+        <h2 class="title">Reservation</h2>
+        <p class="desc">Come on over to Café Serendipity and enjoy a relaxing moment with your friends and family. No reservations required – just drop in and indulge in some delicious snacks and coffee. We look forward to welcoming you!</p>
+        <div class="btn-cont">
+            <button class="reserve-btn">Book A table Now</button>
+        </div>
+        <div class="tele-title">TELEPHONE RESERVATIONS</div>
+        <div class="tele-title">12 34 56 7890</div>
+    </div>
+</div>

@@ -1,0 +1,327 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+.btn-cont{
+    display: flex;
+    .reserve-btn{
+        background: transparent;
+        color: #fff;
+        border: 1px solid;
+        min-height: 45px;
+        min-width: 10rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 5em auto;
+    }
+    .reserve-btn:hover{
+        background-color: #FFFFFF;
+        color: #1A1A1A;
+    }
+}
+.banner{
+    background: url('../../../assets/homepage-hero-bg-img.webp');
+    background-position: 0px -83px;
+    background-size: cover;
+    margin-bottom: 0;
+    padding: 5rem;
+    text-rendering: geometricprecision;
+    text-align: center;
+    color: #FFFFFF;
+    background-blend-mode: multiply;
+    background-color: #636060d4;
+    .title-space {
+        font-size: 3em;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+    .sub-title{
+        display: block;
+        max-width: 40em;
+        margin: 1rem auto;
+        p{
+            padding-bottom: 3em;
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+    }
+    
+}
+.benefit{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5em;
+    justify-content: flex-end;
+    align-items: center;
+    column-count: 2;
+    column-gap: 10em;
+    width: inherit;
+
+    .card{
+        width: calc(35% - (1rem / 2));
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        height: fit-content;
+        break-inside: avoid;
+        padding: 10px;
+        img{
+            aspect-ratio: 1/1;
+            height: auto;
+            max-width: 100%;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            width: 77%;
+        }
+        p{
+            color: #4D4D4D;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.4;
+            font-size: 1.2rem;
+        }
+    }
+    .card:last-child{
+        margin-top: -5em;
+    }
+    .benefit-title{
+        line-height: 1.4;
+        letter-spacing:.1em;
+        font-size: 2em;
+        @media screen and (max-width: 1024px) {
+            font-size: 2.3em !important;
+            font-weight: 500;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 auto;
+        justify-items: center;
+        .card{
+            width: calc(80% - (1rem / 2));
+            img{
+                width: 100%;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+        .card:last-child{
+            margin-top: 0;
+        }
+    }
+}
+.container{
+    background-color: #222222;
+    padding: 3em;
+    margin-bottom: 0;
+    text-align: center;
+    color: #FFFFFF;
+    .menu-cont{
+        margin: 0 10em;
+        .menu-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h2{
+                padding: 0 2em;
+            }
+        }
+        .divide-seperator{
+            display: block;
+            content: "";
+            border-bottom: 0;
+            flex-grow: 1;
+            border-top: 0.1px solid #FFFFFF;
+        }
+        .menu-box{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 3rem;
+            .box{
+                border-bottom: 1px solid #FFFFFF;
+                text-align: start;
+                line-height: 1.4;
+                font-size: 1.2rem;
+                p{
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .menu-cont{
+            margin: 0 auto;
+            .menu-title{
+                h2{
+                    padding: 0 0.75em;
+                }
+            }
+            .menu-box{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}
+.signature-cont{
+    background: url('../../../assets/signeture-bg.webp');
+    background-position: 0px -83px;
+    background-size: cover;
+    margin-bottom: 0;
+    padding: 5rem;
+    text-rendering: geometricprecision;
+    color: #FFFFFF;
+    background-blend-mode: multiply;
+    background-color: #636060d4;
+    .cont{
+        margin: 0 10em;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        p{
+            display: block;
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .btn-cont{
+            .reserve-btn{
+                margin-top: 1em;
+                max-height: 45px;
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .cont{
+            margin: 0 auto;
+            grid-template-columns: repeat(1, 1fr);
+            h2{
+                padding: 0 ;
+            }
+        }
+    }
+}
+.img-cont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3em;
+    column-gap: 2em;
+    img{
+        width: 100%;
+    }
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(1, 1fr);
+        img{
+            margin-bottom: 2em;
+        }
+    }
+}
+.team{
+    .chef{
+        aspect-ratio: 3/4 !important;
+        width: 100% !important;
+        object-fit: contain;
+    }
+}
+.review-cont{
+    background: url('../../../assets/review-cont-bg.webp');
+    background-position: 0px -83px;
+    background-size: cover;
+    margin-bottom: 0;
+    padding: 5rem;
+    text-rendering: geometricprecision;
+    text-align: center;
+    color: #FFFFFF;
+    background-blend-mode: multiply;
+    background-color: #636060;
+    .review-title{
+        font-size: 2rem;
+        margin-bottom: 3em;
+    }
+    .cont{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3em;
+        margin: 0 10em;
+        .review-card{
+            background-color: #1A1A1A;
+            color: #FFFFFF;
+            padding: 2em;
+            border-radius: 1em;
+            position: relative;
+            .img-cont{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1em;
+                img{
+                    position: absolute;
+                    top: -2em;
+                    margin: auto;
+                    width: auto;
+                    border: 5px solid #5E45CE;
+                    border-radius: 50%;
+                }
+            }
+            .review{
+                margin-top: 2rem;
+                position: relative;
+                font-size: 1em;
+                line-height: 1.4;
+                word-break: break-word;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 600;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(1,1fr);
+            margin: 0 auto;
+            .review-card{
+                margin-bottom: 3em;
+            }
+        }
+    }
+}
+.reservation-cont{
+    text-align:center;
+    .cont{
+        margin: 2em 10em;
+        .title{
+            line-height: 1.4;
+            letter-spacing:.1em;
+            font-size: 2em;
+        }
+        .desc{
+            width: 45em;
+            margin: auto;
+            color: #4D4D4D;
+            font-size: 1rem;
+            font-family: 'IBM Plex Sans', sans-serif;;
+        }
+        .tele-title{
+            font-size: 1.4em;
+            font-weight: 500;
+        }
+        .btn-cont{
+            .reserve-btn{
+                color: #222222;
+                border: 2px solid #222222;
+                margin-bottom: 2em;
+                margin-top: 2em;
+            }
+            .reserve-btn:hover{
+                background-color: #222222;
+                color: #FFFFFF;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            margin: 2em auto;
+            .desc{
+                width: 100%;
+            }
+        }
+    }
+}

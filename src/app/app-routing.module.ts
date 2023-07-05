@@ -1,17 +1,32 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
+import { MenuListComponent } from './components/Menu/menu-list/menu-list.component';
+import { CommonModule } from '@angular/common';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./components/Navbar/Navbar.component').then(m => m.NavbarComponent),
+    path: '',
+    component: HomeComponent,
+  },
+  {
+    path: 'menu',
+    component: MenuListComponent,
+  },
+  {
+    path: 'about-us',
+    component: AboutUsComponent,
   },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    CommonModule,
+    RouterModule,
+    RouterModule.forRoot(routes)],
   exports: [RouterModule],
   providers: []
 })

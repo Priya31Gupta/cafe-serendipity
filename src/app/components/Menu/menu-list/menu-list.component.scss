@@ -1,0 +1,146 @@
+.btn-cont{
+    display: flex;
+    .reserve-btn{
+        background: transparent;
+        color: #fff;
+        border: 1px solid;
+        min-height: 45px;
+        min-width: 10rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 5em auto;
+    }
+    .reserve-btn:hover{
+        background-color: #FFFFFF;
+        color: #1A1A1A;
+    }
+}
+.banner{
+    background: url('../../../../assets/signeture-bg.webp');
+    background-position: 0px -83px;
+    background-size: cover;
+    margin-bottom: 0;
+    padding: 5rem;
+    text-rendering: geometricprecision;
+    text-align: center;
+    color: #FFFFFF;
+    background-blend-mode: multiply;
+    background-color: #636060d4;
+    .title-space {
+        font-size: 3em;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+    .sub-title{
+        display: block;
+        max-width: 40em;
+        margin: 1rem auto;
+        p{
+            padding-bottom: 3em;
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+    }
+    
+}
+.section-header{
+    background: url("../../../../assets/Copy-of-Untitled-Design-14.webp");
+    .title-space{
+        font-size: 2em;
+        font-weight: 400;
+    }
+}
+.container{
+    background-color: #222222;
+    padding: 3em;
+    margin-bottom: 0;
+    text-align: center;
+    color: #FFFFFF;
+    .menu-cont{
+        margin: 0 10em;
+        .menu-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h2{
+                padding: 0 2em;
+            }
+        }
+        .divide-seperator{
+            display: block;
+            content: "";
+            border-bottom: 0;
+            flex-grow: 1;
+            border-top: 0.1px solid #FFFFFF;
+        }
+        .menu-box{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 3rem;
+            .box{
+                border-bottom: 1px solid #FFFFFF;
+                text-align: start;
+                line-height: 1.4;
+                margin-bottom: 2em;
+                p{
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .menu-cont{
+            margin: 0 auto;
+            .menu-title{
+                h2{
+                    padding: 0 0.75em;
+                }
+            }
+            .menu-box{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}
+.reservation-cont{
+    background: url('../../../../assets/inside-restaurant-topview-2.webp');
+    background-position: 0px -83px;
+    background-size: cover;
+    margin-bottom: 0;
+    padding: 5rem;
+    text-rendering: geometricprecision;
+    text-align: center;
+    color: #FFFFFF;
+    background-blend-mode: multiply;
+    background-color: #636060d4;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    .cont{
+        margin: 2em 10em;
+        .title{
+            line-height: 1.4;
+            letter-spacing:.1em;
+            font-size: 2em;
+        }
+        .desc{
+            width: 45em;
+            margin: auto;
+            color: #FFFFFF;
+            font-size: 1rem;
+            font-family: 'IBM Plex Sans', sans-serif;;
+        }
+        .tele-title{
+            font-size: 1.4em;
+            font-weight: 500;
+        }
+        @media screen and (max-width: 1024px) {
+            margin: 2em auto;
+            .desc{
+                width: 100%;
+            }
+        }
+    }
+}

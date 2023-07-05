@@ -9,6 +9,7 @@
     align-items: center;
     .cafe-name{
         font-family: cursive;
+        cursor: pointer;
     }
     .justify-end{
         justify-content: end;
@@ -27,6 +28,8 @@
             position: relative;
             display: block;
             cursor: pointer;
+            text-decoration: none;
+            color: #ffffff;
         }
         .reserve-btn{
             background: transparent;
@@ -65,6 +68,8 @@
             position: relative;
             display: block;
             cursor: pointer;
+            text-decoration: none;
+            color: #ffffff;
         }
     }
 }
