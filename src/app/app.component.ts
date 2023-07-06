@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from './components/Navbar/Navbar.component';
-import { FooterComponent } from './components/Footer/footer.component';
+import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(private toastr: ToastrService){}
   title = 'cafe-serendipity';
 }

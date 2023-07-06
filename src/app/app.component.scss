@@ -17,3 +17,22 @@ body{
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 100;
 }
+/* Example of customizing toast styles */
+.toast-container {
+    font-family: 'Arial', sans-serif;
+}
+
+.toast {
+    border-radius: 5px;
+}
+
+.toast-title {
+    font-weight: 200;
+}
+
+.toast-message {
+    font-size: 1.3em;
+    font-weight: 100;
+    line-height: 1.4;
+}
+  
