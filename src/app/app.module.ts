@@ -7,6 +7,8 @@ import { FooterComponent } from './components/Footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { MenuListComponent } from './components/Menu/menu-list/menu-list.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     FooterComponent,
     HomeComponent,
     MenuListComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [
     NavbarComponent,

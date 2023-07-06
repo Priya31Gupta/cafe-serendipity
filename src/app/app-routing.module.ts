@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MenuListComponent } from './components/Menu/menu-list/menu-list.component';
 import { CommonModule } from '@angular/common';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'about-us',
     component: AboutUsComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
   },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];

@@ -1,0 +1,31 @@
+<div class="banner">
+    <h1 class="title-space">Contact Us</h1>
+    <div class="sub-title">
+        <p>We’d love to hear from you! Please don’t hesitate to reach out to us with any questions, comments, or concerns – we’re here to help.</p>
+    </div>
+</div>
+<div class="reservation-cont">
+    <div class="cont">
+        <h2 class="title">OUR LOCATION</h2>
+        <h2>3 E 19th St, 123 Fifth Avenue, NY 10160, New York, USA</h2>
+        <p class="desc">Come on over to Café Serendipity and enjoy a relaxing moment with your friends and family. No reservations required – just drop in and indulge in some delicious snacks and coffee. We look forward to welcoming you!</p>
+        <div class="btn-cont">
+            <button class="reserve-btn">Book A table Now</button>
+        </div>
+        <div class="tele-title">TELEPHONE RESERVATIONS</div>
+        <div class="tele-title">12 34 56 7890</div>
+    </div>
+</div>
+<div class="mail-container">
+    <div class="mail-cont">
+        <h2>Send Us A Message</h2>
+        <p>Massa praesent sit suspendisse ac volutpat amet. Commodo elit at non neque ullamcorper id.</p>
+        <input [(ngModel)]="from_name" placeholder="Full Name*" />
+        <input [(ngModel)]="from_email" placeholder="Active Mail*" />
+        <input [(ngModel)]="content" placeholder="Message*" />
+        <div class="btn-cont">
+            <button class="reserve-btn" (click)="onSubmit()">Send Message</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>

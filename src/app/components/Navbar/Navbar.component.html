@@ -2,8 +2,8 @@
     <h2 class="cafe-name" routerLink="/">Café Serendipity</h2>
     <div class="justify-end list">
         <a class="list-item" routerLink="about-us">About us</a>
-        <a class="list-item" routerLink="/menu">Menu</a>
-        <a class="list-item">Contact</a>
+        <a class="list-item" routerLink="menu">Menu</a>
+        <a class="list-item" routerLink="contact">Contact</a>
         <button class="reserve-btn">RESERVATION</button>
     </div>
     <span class="material-symbols-outlined menu" (click)="toggleMenu()">menu</span>
@@ -11,5 +11,5 @@
 <div class="mobile-list" [ngClass]="menuOption ? 'fadeup' : 'fadedown'" *ngIf="menuOption">
     <a class="list-item" routerLink="about-us">About us</a>
     <a class="list-item" routerLink="/menu">Menu</a>
-    <a class="list-item">Contact</a>
+    <a class="list-item" routerLink="contact">Contact</a>
 </div>

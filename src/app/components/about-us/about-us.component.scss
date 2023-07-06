@@ -1,3 +1,20 @@
+.btn-cont{
+    display: flex;
+    .reserve-btn{
+        background: transparent;
+        color: #fff;
+        border: 1px solid;
+        min-height: 45px;
+        min-width: 10rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 5em auto;
+    }
+    .reserve-btn:hover{
+        background-color: #FFFFFF;
+        color: #1A1A1A;
+    }
+}
 .banner{
     background: url('../../../assets/about-section-bg-img.webp');
     background-position: 0px -269px;
@@ -104,5 +121,78 @@
                 }
             }
         }
+    }
+}
+.speciality-cont{
+    background-color: #1A1A1A;
+    padding: 3em;
+    .cont{
+        margin: 2em 10em;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 4em;
+        .box{
+            color: #FFFFFF;
+            margin-bottom: 2em;
+            text-align: center;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 100;
+            line-height: 1.4;
+            img{
+                width: 100%;
+            }
+            .reserve-btn{
+                margin: 2em 0;
+            }
+        }
+        .box:nth-child(1){
+            text-align: start;
+        }
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(1,1fr);
+            margin: 2em auto;
+        }
+    }
+}
+.meet-team-cont{
+    margin: 2em 10em;
+    padding: 1em 2em;
+    .team-cont{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-bottom: 2em;
+        text-align: center;
+        img{
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: contain;
+        }
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(1,1fr);
+            img{
+                aspect-ratio: 5/4;
+            }
+        }
+    }
+    .team-intro{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 4em;
+        margin-bottom: 2em;
+        align-items: center;
+        h2{
+            margin: auto;
+        }
+        p{
+            color: #555555;
+            line-height: 1.4;
+        }
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        margin: 2em auto;
     }
 }
