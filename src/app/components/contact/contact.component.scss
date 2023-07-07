@@ -83,6 +83,7 @@
         }
         @media screen and (max-width: 1024px) {
             margin: 2em auto;
+            grid-template-columns: repeat(1,1fr);
             .desc{
                 width: 100%;
             }
@@ -97,41 +98,56 @@
     padding: 5em 3em;
     .mail-cont{
         display: grid;
+        grid-template-columns: repeat(2,1fr);
         margin: 2em 10em;
         justify-content: flex-end;
         font-weight: 100;
-        input{
-            background-color: #FFFFFF;
-            border: 1px solid #1A1A1A;
-            min-height: 3em;
-            border-radius: 4px;
-            width: 100%;
-            margin-bottom: 2em;
-            padding: 0.5em 1em;
-            font-size: 0.75em;
-        }
-        input:focus{
-            outline: 0.75px solid #1A1A1A;
-        }
-        .btn-cont{
-            .reserve-btn{
-                color: #1A1A1A;
+        column-gap: 4em;
+        .box{
+            input{
+                background-color: #FFFFFF;
                 border: 1px solid #1A1A1A;
-                margin: 2em 0;
+                min-height: 3em;
                 border-radius: 4px;
-                font-weight: 100;
-                font-size: 1em;
-                min-width: 15em;
+                width: 100%;
+                margin-bottom: 2em;
+                padding: 0.5em 1em;
+                font-size: 0.75em;
             }
-            .reserve-btn:hover{
-                background-color: #1A1A1A;
-                color: #FFFFFF;
+            input:focus{
+                outline: 0.75px solid #1A1A1A;
+            }
+            .btn-cont{
+                .reserve-btn{
+                    color: #1A1A1A;
+                    border: 1px solid #1A1A1A;
+                    margin: 2em 0;
+                    border-radius: 4px;
+                    font-weight: 100;
+                    font-size: 1em;
+                    min-width: 15em;
+                }
+                .reserve-btn:hover{
+                    background-color: #1A1A1A;
+                    color: #FFFFFF;
+                }
             }
         }
+        @media screen and (max-width: 1024px) {
+            display: grid;
+            margin: 0em auto;
+            justify-content: center;
+            grid-template-columns: repeat(1,1fr);
+            .box{
+                input{
+                    width: 100%;
+                }
+                iframe{
+                    width: 100%;
+                }
+            }
+            
+        }
     }
-    @media screen and (max-width: 1024px) {
-        display: grid;
-        margin: 0em auto;
-        justify-content: center;
-    }
+    
 }
